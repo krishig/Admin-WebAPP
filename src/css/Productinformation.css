@@ -1,0 +1,62 @@
+#jj table {
+    width: 100%;
+    min-height: 100%;
+}
+
+#jj {
+    width: 100%;
+    border-bottom: 3px solid #EDEDED;
+}
+
+#jj tr {
+    width: 100%;
+}
+
+#jj td {
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 8px;
+    word-break: break-all; /* Allow words to break and wrap to the next line */
+    overflow-wrap: break-word; /* Allow text to wrap within words */
+}
+
+/* Adjust max-width and min-width for each <td> based on your design */
+#serialNoo{
+    width: 8%;
+    border-right: 2px solid #EDEDED;
+   
+}
+
+#productNamee {
+ width: 40%;
+ border-right: 2px solid #EDEDED;
+
+ text-align: start;
+}
+
+#subCategoryy {
+    width: 12%;
+   
+    border-right: 2px solid #EDEDED;
+}
+
+#brandd {
+    width: 15%;
+
+    border-right: 2px solid #EDEDED;
+}
+
+#pricee {
+    width: 15%;
+  
+    border-right: 2px solid #EDEDED;
+}
+
+#quantityy {
+    width: 10%;
+   
+   
+}
+
+/* Use media queries to adjust the layout for different screen sizes */

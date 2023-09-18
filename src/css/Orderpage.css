@@ -1,0 +1,167 @@
+#orderPageMain {
+    width: 100%;
+    height: 92%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#orderPageAlign {
+    width: 90%;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#orderPageHeading {
+    width: 95%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+}
+#orderPageHeading h1{
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.4vh;
+}
+#orderInfo {
+    width: 95%;
+    height: 85%;
+    background-color: rgb(255, 204, 0);
+    display: flex;
+    flex-direction: column;
+   gap: 2vh;
+}
+
+#orderFilterBar {
+    border-radius: 2vh 2vh;
+    width: 100%;
+    height: 13%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    filter: drop-shadow(0px 5px 2px #bcbcbc);
+
+}
+
+#filterByBtn {
+    width: 15%;
+    height: 60%;
+    background-color: #23AA49;
+    border-radius: 1vh 1vh;
+    position: relative;
+
+
+}
+
+#filterByBtn button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1vh 1vh;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 600;
+
+}
+
+
+
+#orderSortBy {
+    width: 15%;
+    height: 60%;
+    background-color: #23AA49;
+    position: relative;
+    border-radius: 1vh 1vh;
+    z-index: 9999;
+
+}
+#orderSortBy button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1vh 1vh;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+#orderSearchBar{
+    width: 50%;
+    height: 60%;
+    background-color: #D9D9D9;
+    border-radius: 1vh 1vh;
+
+}
+
+#orderSearchBar form {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh 1vh;
+    display: flex;
+
+}
+
+#orderSearchBar input {
+    width: 90%;
+    height: 100%;
+    border-radius: 1vh 1vh;
+    background-color: #D9D9D9;
+    outline: none;
+    padding-left: 2vh;
+    font-size: 2vh;
+
+
+}
+#orderSearchBar button {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#orderPageMode{
+    width: 100%;
+    height: 10%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#orderPageModeBtn1{
+    width: 33.3%;
+    height: 100%;
+ 
+}
+#orderPageModeBtn2{
+    width: 33.3%;
+    height: 100%;
+    
+}
+#orderPageModeBtn3{
+    width: 33.3%;
+    height: 100%;
+
+}
+.orderPageModeButtons button{
+    width: 100%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+      letter-spacing: 0.3vh;
+    height: 100%;
+    background-color: #D9D9D9;
+
+}
+
