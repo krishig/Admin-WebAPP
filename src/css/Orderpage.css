@@ -10,11 +10,12 @@
 #orderPageAlign {
     width: 90%;
     height: 100%;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  
 }
 
 #orderPageHeading {
@@ -24,30 +25,32 @@
     display: flex;
     align-items: center;
 }
-#orderPageHeading h1{
+
+#orderPageHeading h1 {
     font-size: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 0.4vh;
 }
+
 #orderInfo {
     width: 95%;
     height: 85%;
-    background-color: rgb(255, 204, 0);
+
     display: flex;
     flex-direction: column;
-   gap: 2vh;
+    
 }
 
 #orderFilterBar {
-    border-radius: 2vh 2vh;
+    border-radius: 1vh 1vh 0vh 0vh;
     width: 100%;
-    height: 13%;
+    height: 15%;
     background-color: #eeeeee;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    filter: drop-shadow(0px 5px 2px #bcbcbc);
+  
 
 }
 
@@ -67,14 +70,43 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+
+}
+
+#filterByButton {
     border-radius: 1vh 1vh;
     color: white;
     font-size: 2.5vh;
     font-weight: 600;
+    border-radius: 1vh 1vh;
 
 }
 
+#orderFilterDropdownMenu {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    background-color: #eeeeee;
+    border-radius: 1vh 1vh;
+    overflow: hidden;
+    z-index: 999;
+}
 
+.orderFilterDropDownButton {
+    width: 100%;
+    height: 25%;
+    border-bottom: solid black 1px;
+}
+
+.orderFilterDropDownButton button {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+    text-transform: capitalize;
+    font-weight: 600;
+}
 
 #orderSortBy {
     width: 15%;
@@ -85,6 +117,7 @@
     z-index: 9999;
 
 }
+
 #orderSortBy button {
     width: 100%;
     height: 100%;
@@ -92,11 +125,39 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 1vh 1vh;
+   
+}
+#orderSortByButton{
+    border-radius: 1vh 1vh;
     color: white;
     font-size: 2.5vh;
     font-weight: 600;
+
 }
-#orderSearchBar{
+#orderSortDropdownMenu{
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    background-color: #eeeeee;
+    border-radius: 1vh 1vh;
+    overflow: hidden;
+}
+.orderSortDropDownButton{
+    width: 100%;
+    height: 25%;
+    border-bottom: solid black 1px;
+
+}
+.orderSortDropDownButton button{
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#orderSearchBar {
     width: 50%;
     height: 60%;
     background-color: #D9D9D9;
@@ -123,6 +184,7 @@
 
 
 }
+
 #orderSearchBar button {
     width: 10%;
     height: 100%;
@@ -131,37 +193,81 @@
     justify-content: center;
 
 }
-#orderPageMode{
+
+#orderPageMode {
     width: 100%;
     height: 10%;
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border-radius:1vh 1vh; */
+  overflow: hidden;
 }
-#orderPageModeBtn1{
-    width: 33.3%;
-    height: 100%;
- 
-}
-#orderPageModeBtn2{
-    width: 33.3%;
-    height: 100%;
-    
-}
-#orderPageModeBtn3{
+
+#orderPageModeBtn1 {
     width: 33.3%;
     height: 100%;
 
 }
-.orderPageModeButtons button{
+
+#orderPageModeBtn2 {
+    width: 33.3%;
+    height: 100%;
+
+}
+
+#orderPageModeBtn3 {
+    width: 33.3%;
+    height: 100%;
+
+}
+
+.orderPageModeButtons button {
     width: 100%;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-      letter-spacing: 0.3vh;
+    letter-spacing: 0.3vh;
     height: 100%;
     background-color: #D9D9D9;
 
 }
 
+
+
+
+#orderHeading{
+    width: 100%;
+    height: 10%;
+    background-color: #f2f2f2;
+    /* border-radius: 1vh 1vh 0vh 0vh; */
+
+}
+#orderHeading table{
+    width: 100%;
+    height: 100%;
+   
+}
+#orderHeading tr{
+    width: 100%;
+    height: 100%;
+   
+}
+#orderHeading th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+
+#orderData{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 0vh 0vh 1vh 1vh;
+  overflow: hidden;
+  overflow: auto;
+  filter: drop-shadow(0px 2px 1px #00000073);
+
+  
+ 
+}
