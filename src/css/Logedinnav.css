@@ -12,6 +12,7 @@
     width: auto;
     height: auto;
     /* background-color: aqua; */
+    cursor: pointer;
   }
   #headingg h1{
     font-family: HAKSEN;
@@ -31,9 +32,11 @@
    width: 4%;
    display: flex;
    justify-content: flex-end;
+   cursor: pointer;
   }
   #account{
     /* background-color: aquamarine; */
+    cursor: pointer;
    width: 4%;
    display: flex;
    justify-content: flex-start;

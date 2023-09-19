@@ -4,7 +4,7 @@ function Navbar() {
   return (
 
     <div id="nav">
-    <div id="heading">
+    <div id="headinggg">
     <h1>K<span>rish</span>G</h1>
     </div>
    </div>

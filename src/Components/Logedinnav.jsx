@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import menu from "./meneIcon.png"
 import acc from "./account.png"
 import "../css/Logedinnav.css"
+import {  Link } from "react-router-dom";
 
 
 
@@ -18,9 +19,9 @@ function Logedinnav() {
             <div id="menu" onClick={menuHandler}> <img src={menu} alt="" /></div>
 
             <div id="headingg">
-                <h1>K<span>rish</span>G</h1>
+            <Link to="/home">  <h1>K<span>rish</span>G</h1></Link>
             </div>
-            <div id="account"><img src={acc} alt="" /></div>
+            <div id="account"> <img src={acc} alt="" /> </div>
             
      
         <Dropdown isOpen={showNav} ></Dropdown>
