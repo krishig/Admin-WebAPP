@@ -21,14 +21,10 @@ function Logedinnav() {
                 <h1>K<span>rish</span>G</h1>
             </div>
             <div id="account"><img src={acc} alt="" /></div>
-            {
-                showNav ?
+            
      
-        <Dropdown ></Dropdown>
+        <Dropdown isOpen={showNav} ></Dropdown>
       
-                
-                    : <></>
-            }
         </div>
 
     )
