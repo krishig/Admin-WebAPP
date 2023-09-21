@@ -34,7 +34,7 @@ function Productpage() {
 
 
   async function fetchProductData() { // function to fetch product details
-    const list = await axios.get("http://13.200.56.10:5000/python/product?items_per_page=1&page_number=1", {
+    const list = await axios.get("http://13.200.56.10:5000/python/product?items_per_page=100&page_number=1", {
       headers: {
         'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjEsImV4cCI6MTY5NTUyODQ2N30.KU7DxEScT2IpyRCkHT4Ixg7BYYoTLsVb448r5lDqG9k`, // Include the auth token in the headers
         'Content-Type': 'application/json', // Set the content type based on your API's requirements
@@ -42,7 +42,7 @@ function Productpage() {
     })
     setProductData(list.data.data.result)
   }
-
+ console.log(newProductData)
   // useEffect function below 
   useEffect(() => { // it will run fetchProductData() on each time product page gets opened
     fetchProductData()
@@ -109,7 +109,9 @@ function Productpage() {
             </div>
             <div id="productData">
 
-              {newProductData.map((h, index) => {
+              {
+                
+                newProductData.map((h, index) => {
                 return <Productinformation key={h.id} index={index} productData={h} />
               })}
 

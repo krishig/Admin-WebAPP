@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import "../css/Addproduct.css"
 import 'remixicon/fonts/remixicon.css'
 import axios from 'axios'
+import {useNavigate} from "react-router-dom"
 function AddProduct({ closeBtn }) {
   // http://13.200.56.10:5000/python/product
-
+ 
+  const navigate =useNavigate ()
 
   // "product_name": "product name",
   // "price": "price",
@@ -45,11 +47,13 @@ function AddProduct({ closeBtn }) {
         },
      
       })
+      navigate('/products')
+      
     } catch (error) {
       console.log(error)
     }
  }
- console.log(newFormData)
+ 
   
 
 
