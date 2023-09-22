@@ -21,7 +21,7 @@ function Logedinnav() {
             <div id="headingg">
             <Link to="/home">  <h1>K<span>rish</span>G</h1></Link>
             </div>
-            <div id="account"> <img src={acc} alt="" /> </div>
+            <div id="account"> <Link to="/account"> <img src={acc} alt="" /></Link></div>
             
      
         <Dropdown isOpen={showNav} ></Dropdown>

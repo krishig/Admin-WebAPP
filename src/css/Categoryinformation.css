@@ -1,20 +1,18 @@
-#jjj table {
+#jj table {
     width: 100%;
     min-height: 100%;
-
 }
 
-#jjj {
+#jj {
     width: 100%;
     border-bottom: 3px solid #EDEDED;
- 
 }
 
-#jjj tr {
+#jj tr {
     width: 100%;
 }
 
-#jjj td {
+#jj td {
     text-align: center;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -24,51 +22,45 @@
 }
 
 /* Adjust max-width and min-width for each <td> based on your design */
-#serialNooo{
+#categoryId {
     width: 8%;
+    height: 100%;
     border-right: 2px solid #EDEDED;
-   
+
 }
 
-#productNameee {
- width: 40%;
- border-right: 2px solid #EDEDED;
+#categoryName {
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid #EDEDED;
 
- text-align: start;
 }
 
-#subCategoryyy {
+#subCategoryInCategories {
     width: 12%;
-   
+    height: 100%;
     border-right: 2px solid #EDEDED;
+
 }
 
-#branddd {
+#categoryProducts {
     width: 15%;
-
+    height: 100%;
     border-right: 2px solid #EDEDED;
+
 }
 
-#priceee {
+#createdBy {
     width: 15%;
-  
+    height: 100%;
     border-right: 2px solid #EDEDED;
+
 }
 
-#quantityyy {
+#modifiedBy {
     width: 10%;
-   position: relative;
-   
+    height: 100%;
+
 }
 
 /* Use media queries to adjust the layout for different screen sizes */
-.ri-more-2-fill{
-    cursor: pointer;
-}
-#Editt{
-    position: absolute;
-    width: 10vh;
-    height: 10vh;
-    background-color: bisque;
-    right: 0;
-}

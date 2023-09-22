@@ -4,6 +4,8 @@ import Dashboard from './Components/Dashboard';
 import Navbar from './Components/Navbar';
 import Productpage from './Components/Productpage';
 import Orderpage from './Components/Orderpage';
+import Accountpage from './Components/Accountpage';
+import Category from './Components/Category';
  
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -17,7 +19,10 @@ function App() {
           <Route path='/home' element={<Dashboard/>}></Route>
           <Route path='/products' element={<Productpage/>}></Route>
           <Route path='/orders' element={<Orderpage/>}></Route>
-          </Routes>
+          <Route path='/account' element={<Accountpage/>}></Route>/not ready
+          <Route path='/category' element={<Category/>}></Route>
+          
+</Routes>
         
       </div>
     

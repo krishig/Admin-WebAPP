@@ -107,62 +107,7 @@ function Orderpage() {
           <div id="orderData">
          
           <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-          <Orderinformation/>
-
-          <Orderinformation/>
-          
-
-     
+         
         </div>
           </div>
         </div>

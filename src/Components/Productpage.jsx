@@ -19,9 +19,9 @@ function Productpage() {
   const [newAddClickHandler, setAddClickHandler] = useState(false)
 
 
-// functions below
+  // functions below
   function filterHandler() { // function to open filter box
-   
+
     setFilter((prev) => { return !prev })
     if (newSort === true) { setSort(false) }
   }
@@ -42,19 +42,20 @@ function Productpage() {
     })
     setProductData(list.data.data.result)
   }
- console.log(newProductData)
+
   // useEffect function below 
   useEffect(() => { // it will run fetchProductData() on each time product page gets opened
     fetchProductData()
-  }, [])
+  }, [newAddClickHandler])
 
   function addHandler() { // it will open add product page 
     setAddClickHandler(true)
   }
   function closeAddHandler() { //it will close add product page
-    setAddClickHandler(false)
-}
+   setAddClickHandler(false)
  
+  }
+
 
   return (
     <>
@@ -94,7 +95,7 @@ function Productpage() {
               </div>
               <div id="addProduct" onClick={addHandler}><button> <img src={add} alt="" /><h1>Add</h1></button></div>
             </div>
-            
+
             <div id="productHeading">
               <table>
                 <tr>
@@ -110,10 +111,10 @@ function Productpage() {
             <div id="productData">
 
               {
-                
+
                 newProductData.map((h, index) => {
-                return <Productinformation key={h.id} index={index} productData={h} />
-              })}
+                  return <Productinformation key={h.id} index={index} productData={h} />
+                })}
 
             </div>
 
