@@ -18,9 +18,8 @@ function Orderinformation() {
    <td  id='branddd'>asdgasdg</td>
    <td  id='priceee'>asdgasdgasd</td>
    <td  id='quantityyy'>asdgasdgasd <i onClick={editHandler} class="ri-more-2-fill"></i>
-   <div id="Editt"> 
-   <button>Edit</button>
-   </div>
+   {showEdit? <div id="Editt">  <button>Edit</button> </div>:<></>}
+  
    </td>
    </tr>
    </table>

@@ -1,67 +1,63 @@
-#categoryMain {
-    height: 92%;
+#subCategoryMain {
     width: 100%;
-   background-color: #f9f9f9;
+    height: 92%;
+    background-color: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#categoryAlign {
+#subCategoryAlign {
     width: 90%;
     height: 100%;
-   
+
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-#categoryPageHeading {
+.subCategoryHeading{
     width: 95%;
     height: 10%;
-
-
     display: flex;
     align-items: center;
 }
 
-#categoryPageHeading h1 {
+.subCategoryHeading h1 {
     font-size: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 0.2vh;
 }
 
-#categoryInfo {
+#subCategoryInfo {
     width: 95%;
     height: 85%;
+   
     display: flex;
     flex-direction: column;
-
+    gap: 0.5vh;
 }
 
-#searchBarAlign {
+#subCategorySearchBar {
     width: 100%;
     height: 13%;
     background-color: #eeeeee;
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
-    gap: 5vh;
-    padding-left: 2vh;
-    border-radius: 1vh 1vh 0vh 0vh;
-
+    justify-content: space-around;
 }
 
-#categorySearchBar {
-    width: 60%;
+#searchBarrrrrr {
+    width: 50%;
     height: 60%;
     background-color: #D9D9D9;
     border-radius: 1vh 1vh;
+
 }
 
-#categorySearchBar form {
+#searchBarrrrrr form {
     width: 100%;
     height: 100%;
     border-radius: 1vh 1vh;
@@ -69,7 +65,7 @@
 
 }
 
-#categorySearchBar input {
+#searchBarrrrrr input {
     width: 90%;
     height: 100%;
     border-radius: 1vh 1vh;
@@ -82,7 +78,7 @@
 }
 
 
-#categorySearchBar button {
+#searchBarrrrrr button {
     width: 10%;
     height: 100%;
     display: flex;
@@ -91,14 +87,15 @@
 
 }
 
-#addCategory {
-    width: 12%;
+#addSubCategory {
+    width: 8%;
     height: 60%;
     background-color: #23AA49;
     border-radius: 1vh 1vh;
+
 }
 
-#addCategory button {
+#addSubCategory button {
     width: 100%;
     height: 100%;
     display: flex;
@@ -108,89 +105,111 @@
 
 }
 
-#categoryHeading {
+#subCategoryHeading {
     width: 100%;
     height: 10%;
     background-color: #f2f2f2;
 }
 
-#categoryHeading table {
+#subCategoryHeading table {
     width: 100%;
     height: 100%;
 
 }
 
-#categoryHeading tr {
+#subCategoryHeading tr {
     width: 100%;
     height: 100%;
 
 }
 
-#categoryHeading th {
+#subCategoryHeading th {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 
 }
 
-#categoryId {
+#sub_category_id {
     width: 8%;
     height: 100%;
-    border-right: 2px solid #EDEDED;
+    border-right: 2px solid #d9d9d9;
+
 
 }
 
-#categoryName {
-    width: 40%;
+#sub_category_name {
+    width: 42%;
     height: 100%;
-    border-right: 2px solid #EDEDED;
+    border-right: 2px solid #d9d9d9;
+
 
 }
 
-#subCategoryInCategories {
-    width: 12%;
+#category_name {
+    width: 14%;
     height: 100%;
-    border-right: 2px solid #EDEDED;
+    border-right: 2px solid #d9d9d9;
+
 
 }
 
-#categoryProducts {
-    width: 15%;
+#created_by {
+    width: 17%;
     height: 100%;
-    border-right: 2px solid #EDEDED;
+    border-right: 2px solid #d9d9d9;
+
 
 }
 
-#createdBy {
-    width: 15%;
-    height: 100%;
-    border-right: 2px solid #EDEDED;
-
-}
-
-#modifiedBy {
-    width: 10%;
+#modified_by {
+    width: 17%;
     height: 100%;
 
+
 }
 
-#categoryData {
+#subCategoryData {
     width: 100%;
     height: 79%;
     background-color: #ffffff;
-    border-radius: 0vh 0vh 1vh 1vh;
+    border-radius: 1vh 1vh;
     overflow: hidden;
     overflow: auto;
     filter: drop-shadow(2px 2px 1px #00000073);
-     word-break: break-all; /* Allow words to break and wrap to the next line */
-    overflow-wrap: break-word; 
+    word-break: break-all; /* Allow words to break and wrap to the next line */
+    overflow-wrap: break-word; /* Allow tex break-word; /* Allow text to wrap within words */
+
 }
-#categoryData ::-webkit-scrollbar {
+#subCategoryData::-webkit-scrollbar {
     width: 12px;
 }
-#categoryData ::-webkit-scrollbar-track {
+#subCategoryData::-webkit-scrollbar-track {
     background: #ffffff;
 }
-#categoryData ::-webkit-scrollbar-thumb {
+#subCategoryData::-webkit-scrollbar-thumb {
     background-color: #00000073;
     border-radius: 6px;
 }
+#jjjjjj table {
+    width: 100%;
+    min-height: 100%;
+}
+
+#jjjjjj {
+    width: 100%;
+    border-bottom: 3px solid #EDEDED;
+}
+
+#jjjjjj tr {
+    width: 100%;
+}
+
+#jjjjjj td {
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 8px;
+    word-break: break-all; /* Allow words to break and wrap to the next line */
+    overflow-wrap: break-word; /* Allow text to wrap within words */
+}
+

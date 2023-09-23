@@ -295,13 +295,23 @@ border-right: 2px solid #EDEDED;
     height: 79%;
     background-color: #ffffff;
     border-radius: 1vh 1vh;
-  overflow: hidden;
+ overflow: hidden;
   overflow: auto;
   filter: drop-shadow(2px 2px 1px #00000073);
- 
+  word-break: break-all; /* Allow words to break and wrap to the next line */
+  overflow-wrap: break-word; 
 }
 
-
+#productData::-webkit-scrollbar {
+    width: 12px;
+}
+#productData::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+#productData::-webkit-scrollbar-thumb {
+    background-color: #00000073;
+    border-radius: 6px;
+}
 
 
 

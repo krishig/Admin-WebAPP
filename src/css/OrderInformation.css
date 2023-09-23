@@ -67,8 +67,23 @@
 }
 #Editt{
     position: absolute;
-    width: 10vh;
-    height: 10vh;
-    background-color: bisque;
+    width: 7vh;
+    height: 4vh;
+    background-color: #d9d9d9;
     right: 0;
+    display: flex;align-items: center;
+    justify-content: center;
+    border-radius: 1vh 1vh;
+    overflow: hidden;
+
+}
+#Editt button{
+    width: 100%;
+    height: 100%;
+
+}
+#Editt:hover{
+  
+     color: white;
+    background-color: rgb(255, 153, 0);
 }

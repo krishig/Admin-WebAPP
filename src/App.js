@@ -6,7 +6,8 @@ import Productpage from './Components/Productpage';
 import Orderpage from './Components/Orderpage';
 import Accountpage from './Components/Accountpage';
 import Category from './Components/Category';
- 
+ import Sub_category from './Components/Sub_category';
+ import Brands from './Components/Brands';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -19,8 +20,12 @@ function App() {
           <Route path='/home' element={<Dashboard/>}></Route>
           <Route path='/products' element={<Productpage/>}></Route>
           <Route path='/orders' element={<Orderpage/>}></Route>
-          <Route path='/account' element={<Accountpage/>}></Route>/not ready
+          <Route path='/account' element={<Accountpage/>}></Route>
           <Route path='/category' element={<Category/>}></Route>
+          <Route path='/sub_category' element={<Sub_category/>}></Route>
+          <Route path='/brands' element={<Brands/>}></Route>
+
+
           
 </Routes>
         

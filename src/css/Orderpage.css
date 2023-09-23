@@ -268,6 +268,17 @@
   overflow: auto;
   filter: drop-shadow(0px 2px 1px #00000073);
 
-  
+  word-break: break-all; /* Allow words to break and wrap to the next line */
+  overflow-wrap: break-word; 
  
+}
+#orderData::-webkit-scrollbar {
+    width: 12px;
+}
+#orderData::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+#orderData::-webkit-scrollbar-thumb {
+    background-color: #00000073;
+    border-radius: 6px;
 }
