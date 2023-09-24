@@ -8,9 +8,9 @@
   }
   
   #formalignn{
-    width: 70%;
+    min-width: 70%;
     height: 70%;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,12 +50,14 @@
     
   }
   #formm{
-    width: 40%;
-    height: 60%;
-    background-color: white;
+    min-width: 400px;
+    min-height: 60%;
+    /* background-color: red; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.672);
+   
   
   }
+ 
   #formHeading{
     width: 100%;
     height: 25%;
@@ -70,7 +72,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     letter-spacing: 0.2vh;
-    font-weight: 500;
+    font-weight: 600;
+
 }
   #formm form{
     width: 100%;
@@ -98,5 +101,28 @@
     color: white;
     border-radius: 0.5vh 0.5vh;
   cursor: pointer;
+  }
+  @media(max-width:768px){
+    #formHeading{
+    
+      padding-left: 1.9rem;
+      padding-bottom: 1rem;
+
+      
+    }
+    #formHeading h1{
+     
+      font-size: 1.3rem;
+      
+      
+      
+    }
+    #formm{
+      min-width: 350px;
+     
+     
+    
+    }
+   
   }
   

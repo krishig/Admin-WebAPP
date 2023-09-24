@@ -27,13 +27,13 @@ function Sub_category() {
     function addHandler() { // it will open add product page 
         setAddClickHandler(true)
     }
-    console.log(newSubCatagoryData)
+   
     return (
         <>
             <Logedinnav />
             <div id="subCategoryMain">
                 <div id="subCategoryAlign">
-                    <div className='subCategoryHeading'><h1>Product page</h1></div>
+                    <div className='subCategoryHeading'><h1>Sub category</h1></div>
                     <div id="subCategoryInfo">
                         <div id="subCategorySearchBar">
                             <div id="searchBarrrrrr">

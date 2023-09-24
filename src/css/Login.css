@@ -10,7 +10,7 @@
 #formalign{
   width: 70%;
   height: 70%;
-
+/* background-color: darkgray; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,12 +49,14 @@
   transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
 #form{
-  width: 40%;
-  height: 60%;
+  min-width: 400px;
+  min-height: 60%;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.672);
+  /* background-color: chocolate; */
 
 }
+
 #form form{
   width: 100%;
   height: 100%;
@@ -79,4 +81,12 @@
   color: white;
   border-radius: 0.5vh 0.5vh;
 cursor: pointer;
+}
+@media(max-width:768px){
+  #form{
+    min-width: 350px;
+
+    /* background-color: red; */
+  
+  }
 }

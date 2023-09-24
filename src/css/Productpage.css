@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #productAlign {
@@ -33,9 +34,10 @@
 }
 
 #productInfo {
+
     width: 95%;
     height: 85%;
-  
+
     display: flex;
     flex-direction: column;
     gap: 0.5vh;
@@ -45,6 +47,7 @@
     width: 100%;
     height: 13%;
     background-color: #eeeeee;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -52,13 +55,18 @@
 }
 
 #filterBy {
-    width: 15%;
+    width: 130px;
+    /* min-width: 30px; */
     height: 60%;
     background-color: #23AA49;
     border-radius: 1vh 1vh;
     position: relative;
 
 
+}
+
+button h1 {
+    color: white;
 }
 
 #filterBy button {
@@ -68,8 +76,18 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 1vh 1vh;
+    gap: 0.5vh;
+}
 
+#filterBy h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
 
+}
+
+#filterBy img {
+    width: 15px;
 }
 
 #filterDropDown {
@@ -78,8 +96,7 @@
     height: 25vh;
     background-color: #eeeeee;
     border-radius: 1vh 1vh;
-    margin-top: 0.2vh;
-    z-index: 9999;
+    z-index: 9999999999999;
 
 }
 
@@ -93,7 +110,8 @@
 #lastfilterDropDownButton {
     width: 100%;
     height: 25%;
-    
+
+
 }
 
 #filterDropDownButton button {
@@ -103,6 +121,7 @@
     font-size: 2vh;
     text-transform: capitalize;
     font-weight: 600;
+
 }
 
 #lastfilterDropDownButton button {
@@ -116,7 +135,9 @@
 }
 
 #sortBy {
-    width: 15%;
+    width: 130px;
+
+    /* min-width: 30px; */
     height: 60%;
     background-color: #23AA49;
     position: relative;
@@ -132,6 +153,20 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 1vh 1vh;
+    gap: 0.5vh;
+
+}
+
+#sortBy h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+#sortBy img {
+    width: 15px;
+
 }
 
 #sortByDropDown {
@@ -173,11 +208,11 @@
 }
 
 #searchBar {
-    width: 50%;
+    width: 600px;
+    min-width: 100px;
     height: 60%;
     background-color: #D9D9D9;
     border-radius: 1vh 1vh;
-
 }
 
 #searchBar form {
@@ -211,7 +246,7 @@
 }
 
 #addProduct {
-    width: 8%;
+    width: 100px;
     height: 60%;
     background-color: #23AA49;
     border-radius: 1vh 1vh;
@@ -225,89 +260,99 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 1vh 1vh;
-
 }
 
-button h1 {
-    color: white;
-    font-size: 2.5vh;
-    font-weight: 600;
+#addProduct img {
+    width: 15px;
 }
 
-#productHeading{
+
+#productHeading {
     width: 100%;
     height: 10%;
     background-color: #f2f2f2;
 }
-#productHeading table{
+
+#productHeading table {
     width: 100%;
     height: 100%;
-   
+
 }
-#productHeading tr{
+
+#productHeading tr {
     width: 100%;
     height: 100%;
-   
+
 }
-#productHeading th{
+
+#productHeading th {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 
 }
 
-#serialNo{
-width: 8%;
-height: 100%;
-border-right: 2px solid #EDEDED;
+#serialNo {
+    width: 8%;
+    height: 100%;
+    border-right: 2px solid #EDEDED;
 
 }
-#productName{
+
+#productName {
     width: 40%;
     height: 100%;
     border-right: 2px solid #EDEDED;
 
 }
-#subCategory{
+
+#subCategory {
     width: 12%;
     height: 100%;
     border-right: 2px solid #EDEDED;
 
 }
-#brand{
+
+#brand {
     width: 15%;
     height: 100%;
     border-right: 2px solid #EDEDED;
 
 }
-#price{
+
+#price {
     width: 15%;
     height: 100%;
     border-right: 2px solid #EDEDED;
-    
+
 }
-#quantity{
+
+#quantity {
     width: 10%;
     height: 100%;
-  
+
 }
-#productData{
+
+#productData {
     width: 100%;
     height: 79%;
     background-color: #ffffff;
     border-radius: 1vh 1vh;
- overflow: hidden;
-  overflow: auto;
-  filter: drop-shadow(2px 2px 1px #00000073);
-  word-break: break-all; /* Allow words to break and wrap to the next line */
-  overflow-wrap: break-word; 
+    overflow: hidden;
+    overflow: auto;
+    filter: drop-shadow(2px 2px 1px #00000073);
+    word-break: break-all;
+    /* Allow words to break and wrap to the next line */
+    overflow-wrap: break-word;
 }
 
 #productData::-webkit-scrollbar {
     width: 12px;
 }
+
 #productData::-webkit-scrollbar-track {
     background: #ffffff;
 }
+
 #productData::-webkit-scrollbar-thumb {
     background-color: #00000073;
     border-radius: 6px;
@@ -318,16 +363,156 @@ border-right: 2px solid #EDEDED;
 
 
 
+@media(max-width:1024px) {    /* laptop small */
+    #productAlign {
+        width: 100%;
+
+    }
+
+    #filterBy {
+        width: 120px;
+        height: 50%;
+    }
+
+    #filterBy h1 {
+        font-size: 1rem;
+    }
 
 
 
+    #filterBy img {
+        width: 15px;
+    }
+
+    #sortBy {
+        width: 120px;
+        height: 50%;
+    }
+
+    #sortBy h1 {
+
+        font-size: 1rem;
+
+    }
+
+    #sortBy img {
+        width: 15px;
+    }
+
+    #searchBar {
+        width: 400px;
+    }
+
+    #addProduct {
+        width: 70px;
+        height: 50%;
+    }
+
+    #addProduct img {
+        width: 15px;
+    }
+
+}
+
+@media(max-width:768px) { /*tablet*/
+    #productAlign {
+        width: 100%;
+
+    }
+
+    #filterBy {
+        width: 70px;
+        height: 50%;
+    }
+
+    #filterBy h1 {
+        font-size: 0.6rem;
+    }
 
 
 
+    #filterBy img {
+        width: 10px;
+    }
+
+    #sortBy {
+        width: 70px;
+        height: 50%;
+    }
+
+    #sortBy h1 {
+
+        font-size: 0.5rem;
+
+    }
+
+    #sortBy img {
+        width: 10px;
+    }
+
+    #searchBar {
+        width: 400px;
+    }
+
+    #addProduct {
+        width: 70px;
+        height: 50%;
+    }
+
+    #addProduct img {
+        width: 12px;
+    }
+
+}
+
+@media(max-width:426px) { /* mobile large */
+    #productAlign {
+        width: 100%;
+
+    }
+
+    #filterBy {
+        width: 60px;
+        height: 40%;
+    }
+
+    #filterBy h1 {
+        font-size: 0.6rem;
+    }
 
 
 
+    #filterBy img {
+        width: 10px;
+    }
 
+    #sortBy {
+        width: 60px;
+        height: 40%;
+    }
 
+    #sortBy h1 {
 
+        font-size: 0.5rem;
 
+    }
+
+    #sortBy img {
+        width: 10px;
+    }
+
+    #searchBar{
+        width: 200px;
+        height: 40%;
+    }
+
+    #addProduct {
+        width: 55px;
+        height: 40%;
+    }
+
+    #addProduct img {
+        width: 12px;
+    }
+
+}

@@ -5,7 +5,7 @@ function Sub_category_Information({Data}) {
   return (
     <div id="jj">
     <table >
-    <tr>
+        <tr>
     <td  id='sub_category_id'>{Data.id}</td>
     <td  id='sub_category_name'>{Data.sub_category_name}</td>
     <td  id='category_name'>{Data.category_name}</td>
@@ -14,7 +14,7 @@ function Sub_category_Information({Data}) {
    
     </tr>
     </table>
-    </div>
+        </div>
   )
 }
 

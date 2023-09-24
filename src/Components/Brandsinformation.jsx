@@ -9,7 +9,7 @@ function Brandsinformation({Data}) {
     <td  id='brand_name'>{Data.brand_name}</td>
     <td  id='brand_product_name'>{Data.products.length}</td>
     <td  id='brand_created_by'>{Data.created_by}</td>
-    <td  id='brand_modified_by'>{Data.modified_by?Data.modified_by:"null"}</td>
+    <td  id='brand_modified_by'>{Data.modified_by?Data.modified_by:"-"}</td>
    
     </tr>
     </table>

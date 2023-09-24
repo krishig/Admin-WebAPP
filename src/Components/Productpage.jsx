@@ -31,12 +31,11 @@ function Productpage() {
     if (newFilter === true) { setFilter(false) }
 
   }
-
-
+   
   async function fetchProductData() { // function to fetch product details
     const list = await axios.get("http://13.200.56.10:5000/python/product?items_per_page=100&page_number=1", {
       headers: {
-        'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjEsImV4cCI6MTY5NTUyODQ2N30.KU7DxEScT2IpyRCkHT4Ixg7BYYoTLsVb448r5lDqG9k`, // Include the auth token in the headers
+        'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NjE0MzMyMn0.k5MfVwSeNu61_BFPRpU5S7VHFcFKC5LdI5lLyibnfSU`, // Include the auth token in the headers
         'Content-Type': 'application/json', // Set the content type based on your API's requirements
       },
     })
@@ -61,12 +60,12 @@ function Productpage() {
     <>
       <Logedinnav />
       <div id="productMain">
-        {newAddClickHandler ? <AddProduct closeBtn={closeAddHandler} /> : console.log("gg")}
+        {newAddClickHandler ? <AddProduct closeBtn={closeAddHandler} /> : <></>}
         <div id="productAlign">
           <div id="productPageHeading"><h1>Product page</h1></div>
           <div id="productInfo">
             <div id="filterBar">
-              <div id="filterBy" onClick={filterHandler}><button> <img src={filter} alt="" /><h1>Filter By</h1> <img src={Dropdown} alt="" /></button>
+              <div id="filterBy" onClick={filterHandler}><button> <img src={filter} alt="" /><h1>Filter</h1> <img src={Dropdown} alt="" /></button>
                 {newFilter ?
                   <div id="filterDropDown">
                     <div id="filterDropDownButton"><button>date</button></div>
@@ -76,7 +75,7 @@ function Productpage() {
                   </div> : <></>}
               </div>
 
-              <div id="sortBy" onClick={sortClickHandler}><button><img src={filter} alt="" /><h1>Sort By</h1><img src={Dropdown} alt="" /></button>
+              <div id="sortBy" onClick={sortClickHandler}><button><img src={filter} alt="" /><h1>Sort</h1><img src={Dropdown} alt="" /></button>
                 {newSort ?
                   <div id="sortByDropDown">
                     <div id="sortDropDownList"><button>price</button></div>
