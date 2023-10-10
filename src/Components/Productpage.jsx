@@ -7,7 +7,7 @@ import add from "../css/add.png"
 import Search from "../css/search.png"
 import 'remixicon/fonts/remixicon.css'
 import Productinformation from './Productinformation'
-import axios from 'axios'
+import axios from '../utils/axios'
 import AddProduct from './Addproduct'
 
 
@@ -33,9 +33,9 @@ function Productpage() {
   }
    
   async function fetchProductData() { // function to fetch product details
-    const list = await axios.get("http://13.200.56.10:5000/python/product?items_per_page=100&page_number=1", {
+    const list = await axios.get("/product?items_per_page=10&page_number=1", {
       headers: {
-        'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NjE0MzMyMn0.k5MfVwSeNu61_BFPRpU5S7VHFcFKC5LdI5lLyibnfSU`, // Include the auth token in the headers
+        'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NzUxMDQ0N30.-rgyCrvJlmV2eOuCLAUVifBgk1BGSWwou5h-9a1WgfY`, // Include the auth token in the headers
         'Content-Type': 'application/json', // Set the content type based on your API's requirements
       },
     })

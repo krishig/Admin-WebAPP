@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../css/Login.css"
 import 'remixicon/fonts/remixicon.css'
 import { ToastContainer, toast } from 'react-toastify';
-import axios from 'axios'
+import axios from '../utils/axios';
 import Verify from './Verify'
 import Navbar from './Navbar';
 
@@ -28,7 +28,7 @@ function Login() {
       password: e.target.password.value
     }
    try {
-    const res= await axios.post("http://13.200.56.10:5000/python/user/login",a)
+    const res= await axios.post("/user/login?user_role=Sales",a)
     setSubmit(true)
     console.log(res)
    }catch(error){

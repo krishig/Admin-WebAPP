@@ -4,15 +4,17 @@ import "../css/sub_category.css"
 import Search from '../css/search.png'
 import add from "../css/add.png"
 import Sub_category_Information from './Sub_category_Information'
-import axios from 'axios'
+import axios from '../utils/axios'
+
+
 function Sub_category() {
     const [newAddClickHandler, setAddClickHandler] = useState(false)
     const[newSubCatagoryData,setSubCategoryData]=useState([])
 
     async function fetchSubCategoryData() { // function to fetch product details
-        const subCategories = await axios.get("http://13.200.56.10:5000/python/sub_category?items_per_page=1000&page_number=1", {
+        const subCategories = await axios.get("/sub_category?items_per_page=1000&page_number=1", {
           headers: {
-            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjEsImV4cCI6MTY5NTUyODQ2N30.KU7DxEScT2IpyRCkHT4Ixg7BYYoTLsVb448r5lDqG9k`, // Include the auth token in the headers
+            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NzUxMDQ0N30.-rgyCrvJlmV2eOuCLAUVifBgk1BGSWwou5h-9a1WgfY`, // Include the auth token in the headers
             'Content-Type': 'application/json', // Set the content type based on your API's requirements
           },
         })

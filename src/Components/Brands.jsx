@@ -3,14 +3,14 @@ import "../css/Brands.css"
 import Logedinnav from './Logedinnav'
 import Search from '../css/search.png'
 import add from "../css/add.png"
-import axios from 'axios'
+import axios from '../utils/axios'
 import Brandsinformation from './Brandsinformation'
 function Brands() {
     const[newBrandsData,setBrandsData]=useState([])
     async function fetchBrandsData() { // function to fetch product details
-        const Brands = await axios.get("http://13.200.56.10:5000/python/product_brands?items_per_page=100000&page_number=1", {
+        const Brands = await axios.get("/product_brands?items_per_page=100000&page_number=1", {
           headers: {
-            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjEsImV4cCI6MTY5NTUyODQ2N30.KU7DxEScT2IpyRCkHT4Ixg7BYYoTLsVb448r5lDqG9k`, // Include the auth token in the headers
+            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NzUxMDQ0N30.-rgyCrvJlmV2eOuCLAUVifBgk1BGSWwou5h-9a1WgfY`, // Include the auth token in the headers
             'Content-Type': 'application/json', // Set the content type based on your API's requirements
           },
         })
