@@ -33,12 +33,12 @@ function Login() {
 
       const res = await axios.post("/user/login?user_role=Sales", a)
       setSubmit(true)
-      // console.log()
       localStorage.setItem('token',res.data.data.token)
 
     }
 
     catch (error) {
+      console.log(error)
       toast.error('❗ wrong credentials', {
         position: "top-center",
         autoClose: 1500,
