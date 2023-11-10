@@ -1,0 +1,171 @@
+#SubCategoryEditDataMain {
+    width: 100%;
+    height: 92%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SubCategoryEditDataAlign {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+#SubCategoryEditDataHeading {
+    width: 95%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#headinggggggggg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#deleteButtonnn {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#deleteButtonnn button {
+    width: 20%;
+    height: 70%;
+    background-color: red;
+    border-radius: 1vw;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: white;
+}
+
+#SubCategoryEditDataHeading h1 {
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+}
+
+#SubCategoryEditDatabottom {
+    width: 95%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#SubCategoryEditDatabottomImageMain {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#SubCategoryEditDatabottomImage {
+    width: 40%;
+    height: 100%;
+    border-right: 3px solid #EDEDED;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SubCategoryEditDatabottomImage img {
+    width: 90%;
+    height: 80%;
+}
+
+#SubCategoryEditDatabottomcategoryId {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#SubCategoryEditDatabottomcategoryId form {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#SubCategoryEditDatabottominput {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#SubCategoryEditDatabottominput label {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: black;
+}
+
+#SubCategoryEditDatabottomcategoryId input {
+    width: 80%;
+    height: 80%;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #EDEDED;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#SubCategoryEditDatabottomcategoryId ::placeholder {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#SubCategoryEditDatabottomSave {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SubCategoryEditDatabottomSave button {
+    background-color: #23AA49;
+    width: 15%;
+    height: 40%;
+    border-radius: 0.5vw;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: white;
+}

@@ -1,0 +1,143 @@
+#addSubCategoryMain {
+    width: 100%;
+    height: 92%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addSubCategoryAlign {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+#addSubCategoryHeading {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#addSubCategoryHeading h1 {
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+}
+
+#addSubCategoryButtom {
+    width: 95%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#addSubCategorybottomImageMain {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#addSubCategorybottomImage {
+    width: 40%;
+    height: 100%;
+    border-right: 3px solid #EDEDED;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addSubCategorybottomImage img {
+    width: 90%;
+    height: 80%;
+}
+
+#addSubCategorybottomcategoryId {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#addSubCategorybottomcategoryId form {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#addSubCategorybottominput {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#addSubCategorybottominput label {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: black;
+}
+
+#addSubCategorybottominput input {
+    width: 80%;
+    height: 80%;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #EDEDED;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#addSubCategorybottominput ::placeholder {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#addSubCategorybottomSave {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addSubCategorybottomSave button {
+    background-color: #23AA49;
+    width: 15%;
+    height: 40%;
+    border-radius: 0.5vw;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: white;
+}

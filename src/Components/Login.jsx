@@ -7,9 +7,11 @@ import Verify from './Verify'
 import Navbar from './Navbar';
 
 function Login() {
- const [newClick, setClick] = useState(false)
-  const [newVal,setVal] = useState()
+  const [newClick, setClick] = useState(false)
+  const [newVal, setVal] = useState()
   const [isSubmit, setSubmit] = useState(false)
+
+
   function passwordHandler() {
     if (newClick == false) {
       setClick(true)
@@ -27,52 +29,53 @@ function Login() {
       username: e.target.username.value,
       password: e.target.password.value
     }
-   try {
-    const res= await axios.post("/user/login?user_role=Sales",a)
-    setSubmit(true)
-    console.log(res)
-   }catch(error){
-   toast.error('❗ wrong credentials', {
-      position: "top-center",
-      autoClose: 1500,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
-   
-   }
-   
+    try {
 
-  
-    
+      const res = await axios.post("/user/login?user_role=Sales", a)
+      setSubmit(true)
+      // console.log()
+      localStorage.setItem('token',res.data.data.token)
+
+    }
+
+    catch (error) {
+      toast.error('❗ wrong credentials', {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+
+    }
   }
 
   return (
-  
-    isSubmit ? <Verify /> : 
-    <>
-    <Navbar></Navbar>
-    <div id='main'>
-      <div id="formalign">
-        <div id="slider">
-          <div id="smallSlider">
-            <div id="slider1"></div>
-            <div id="slider2"></div>
+
+    isSubmit ? <Verify /> :
+      <>
+        <Navbar></Navbar>
+        <div id='main'>
+          <div id="formalign">
+            <div id="slider">
+              <div id="smallSlider">
+                <div id="slider1"></div>
+                <div id="slider2"></div>
+              </div>
+            </div>
+            <div id="form" >
+              <form action="" onSubmit={submitHandler}>
+                <input id='inputs' type="text" name='username' placeholder='Username' />
+                <input id='inputs' type="password" name='password' placeholder='Password' />
+                <input className='Submit' value="Login" type="submit" />
+              </form>
+            </div>
           </div>
         </div>
-        <div id="form" >
-          <form action="" onSubmit={submitHandler}>
-            <input id='inputs' type="text" name='username' placeholder='Username' />
-            <input id='inputs' type="password" name='password' placeholder='Password' />
-            <input className='Submit' value="Login" type="submit" />
-          </form>
-        </div>
-      </div>
-    </div>
-    </>
+      </>
 
 
 

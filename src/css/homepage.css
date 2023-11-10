@@ -1,0 +1,202 @@
+#HomepageMain {
+    height: 92%;
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#HomepageAlign {
+    width: 80%;
+    height: 90%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 20px black;
+ 
+}
+
+#HomepageTop {
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(#69C41F,#27AB46);
+}
+
+#HomepageTittle {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HomepageTitleAlign {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#HomepageTitleAlign h1 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#HomepageDate{
+    width: 50px;
+    height: 50px;
+    background-color: #43B635;
+    border-radius: 100%;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: drop-shadow(0 0 0.1rem rgb(0, 0, 0)); */
+    box-shadow: 0.5px 1px 5px black;
+}
+
+#HomepageButtons {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homepageButtonsAlign {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+#HomepageBtns {
+    width: 90%;
+    height: 60%;
+    background-color: aliceblue;
+    border-radius: 0.5vw 0.5vw;
+    overflow: hidden;
+
+}
+
+#HomepageBtns button {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    font-weight: 400;
+    color: #878787;
+
+}
+
+.spanforzero {
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+    color: black;
+}
+
+#HomepageBtns2{
+    width: 90%;
+    height: 60%;
+    /* background-color: #66C321; */
+    background-color: #E4E3D6;
+    border-radius: 0.5vw 0.5vw;
+    overflow: hidden;
+    /* border: 1px solid black; */
+
+}
+
+#HomepageBtns2 button {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    /* letter-spacing: 0.1vw; */
+    font-weight: 600;
+    color: black;
+
+}
+
+#HomepageBottom{
+    width: 100%;
+    height: 70%;
+}
+
+#Dateinput{
+    display: none;
+}
+
+#orderHeading{
+    width: 100%;
+    height: 10%;
+    background-color: #f2f2f2;
+    /* border-radius: 1vh 1vh 0vh 0vh; */
+
+}
+#orderHeading table{
+    width: 100%;
+    height: 100%;
+   
+}
+#orderHeading tr{
+    width: 100%;
+    height: 100%;
+   
+}
+#orderHeading th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+
+#orderData{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 0vh 0vh 1vh 1vh;
+  overflow: hidden;
+  overflow: auto;
+  filter: drop-shadow(0px 2px 1px #00000073);
+
+  word-break: break-all; /* Allow words to break and wrap to the next line */
+  overflow-wrap: break-word; 
+ 
+}
+#orderData::-webkit-scrollbar {
+    width: 12px;
+}
+#orderData::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+#orderData::-webkit-scrollbar-thumb {
+    background-color: #00000073;
+    border-radius: 6px;
+}
+
+#emptyImg{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+#emptyImg h1{
+ font-size: 2vw;
+ font-weight: 600;
+ letter-spacing: 0.3vw;
+ font-family: Gilroy;
+}

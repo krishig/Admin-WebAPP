@@ -1,6 +1,8 @@
 #jj table {
+   
     width: 100%;
     min-height: 100%;
+    cursor: pointer;
 }
 
 #jj {
@@ -63,4 +65,5 @@
 
 }
 
-/* Use media queries to adjust the layout for different screen sizes */
+
+

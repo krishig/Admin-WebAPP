@@ -5,16 +5,17 @@ import Search from '../css/search.png'
 import add from "../css/add.png"
 import Sub_category_Information from './Sub_category_Information'
 import axios from '../utils/axios'
+import { useNavigate } from 'react-router-dom'
 
 
 function Sub_category() {
-    const [newAddClickHandler, setAddClickHandler] = useState(false)
+   const navigate = useNavigate()
     const[newSubCatagoryData,setSubCategoryData]=useState([])
 
     async function fetchSubCategoryData() { // function to fetch product details
         const subCategories = await axios.get("/sub_category?items_per_page=1000&page_number=1", {
           headers: {
-            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NzUxMDQ0N30.-rgyCrvJlmV2eOuCLAUVifBgk1BGSWwou5h-9a1WgfY`, // Include the auth token in the headers
+            'Authorization': localStorage.getItem('token'), // Include the auth token in the headers
             'Content-Type': 'application/json', // Set the content type based on your API's requirements
           },
         })
@@ -27,7 +28,7 @@ function Sub_category() {
       }, [])
 
     function addHandler() { // it will open add product page 
-        setAddClickHandler(true)
+      navigate('/addSubCategory')
     }
    
     return (

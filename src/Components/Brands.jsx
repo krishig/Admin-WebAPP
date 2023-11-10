@@ -10,7 +10,7 @@ function Brands() {
     async function fetchBrandsData() { // function to fetch product details
         const Brands = await axios.get("/product_brands?items_per_page=100000&page_number=1", {
           headers: {
-            'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNfaWQiOjc1LCJ1c2VybmFtZSI6ImdhdXJhdmxvayIsInJvbGUiOjIsImV4cCI6MTY5NzUxMDQ0N30.-rgyCrvJlmV2eOuCLAUVifBgk1BGSWwou5h-9a1WgfY`, // Include the auth token in the headers
+            'Authorization': localStorage.getItem('token'), // Include the auth token in the headers
             'Content-Type': 'application/json', // Set the content type based on your API's requirements
           },
         })

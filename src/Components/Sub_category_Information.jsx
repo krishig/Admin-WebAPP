@@ -1,10 +1,17 @@
 import React from 'react'
 import "../css/sub_category.css"
+import { useNavigate } from 'react-router-dom';
 
 function Sub_category_Information({Data}) {
+  const navigate = useNavigate()
+
+  function clickHandler(){
+     navigate('/viewSubCategory', { state: { myData: Data } });
+  
+  }
   return (
-    <div id="jj">
-    <table >
+    <div id="jj" onClick={clickHandler}>
+    <table  >
         <tr>
     <td  id='sub_category_id'>{Data.id}</td>
     <td  id='sub_category_name'>{Data.sub_category_name}</td>
