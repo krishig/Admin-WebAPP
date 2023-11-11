@@ -179,6 +179,7 @@
     overflow: auto;
     width: 100%;
     min-height: 100%;
+    cursor: pointer;
 }
 
 #Brands_EachData {

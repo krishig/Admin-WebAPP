@@ -1,0 +1,173 @@
+#brandEditDataMain {
+    width: 100%;
+    height: 92%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#brandEditDataAlign {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+#brandEditDataHeading {
+    width: 95%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#brandEditDataHeading h1 {
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+}
+
+#headinggggggggggg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#deleteButtonnnnnnn {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#deleteButtonnnnnnn button {
+    width: 20%;
+    height: 70%;
+    background-color: red;
+    border-radius: 1vw;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: white;
+}
+
+
+
+#brandEditDatabottom {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#brandEditDatabottomImageMain {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    border-bottom: 3px solid #EDEDED;
+
+}
+
+#brandEditDatabottomImage {
+    width: 40%;
+    height: 100%;
+    border-right: 3px solid #EDEDED;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#brandEditDatabottomImage img {
+    width: 90%;
+    height: 80%;
+}
+
+#brandEditDatabottomcategoryId {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#brandEditDatabottomcategoryId form {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#brandEditDatabottominput {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#brandEditDatabottominput label {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: black;
+}
+
+#brandEditDatabottominput input{
+    width: 80%;
+    height: 80%;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #EDEDED;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#brandEditDatabottominput ::placeholder {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2vh;
+    color: black;
+
+}
+
+#brandEditDatabottomSave {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#brandEditDatabottomSave button {
+    background-color: #23AA49;
+    width: 15%;
+    height: 40%;
+    border-radius: 0.5vw;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4vh;
+    color: white;
+}

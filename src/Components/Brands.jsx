@@ -5,15 +5,21 @@ import Search from '../css/search.png'
 import add from "../css/add.png"
 import axios from '../utils/axios'
 import Brandsinformation from './Brandsinformation'
+
+
+
+
 function Brands() {
     const[newBrandsData,setBrandsData]=useState([])
     async function fetchBrandsData() { // function to fetch product details
-        const Brands = await axios.get("/product_brands?items_per_page=100000&page_number=1", {
+        const api = '/product_brands?items_per_page=10&page_number=1'
+        const Brands = await axios.get(api, {
           headers: {
             'Authorization': localStorage.getItem('token'), // Include the auth token in the headers
             'Content-Type': 'application/json', // Set the content type based on your API's requirements
           },
         })
+      
         setBrandsData(Brands.data.data.result)
       }
     
@@ -22,7 +28,6 @@ function Brands() {
         fetchBrandsData()
       }, [])
 
-     
     return (
         <>
             <Logedinnav />

@@ -31,7 +31,7 @@ function Login() {
     }
     try {
 
-      const res = await axios.post("/user/login?user_role=Sales", a)
+      const res = await axios.post("/user/login?user_role=Admin", a)
       setSubmit(true)
       localStorage.setItem('token',res.data.data.token)
 
